@@ -6,6 +6,21 @@ model = pickle.load(open("AdaBoost.pkl", "rb"))
 
 st.title("Renal risk: Renal Health Risk Assessment")
 
+bg = """
+
+<style>
+[data-testid="stAppViewContainer"] {
+ 
+background-image: url("https://drgura.com/wp-content/uploads/DrGura-iStock-1125719605.jpg");
+background-size: cover;
+}
+
+<style/>
+
+"""
+
+st.markdown(bg, unsafe_allow_html=True)
+
 col1, col2 = st.columns(2)
 
 with col1:
